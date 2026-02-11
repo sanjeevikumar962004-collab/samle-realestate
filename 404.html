@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Realest</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            height: 100vh;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-content {
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 10rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(217, 242, 55, 0.3);
+        }
+
+        .error-message {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .error-desc {
+            color: #aaa;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .error-bg-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30vw;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.03);
+            z-index: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="error-page">
+        <div class="error-bg-text">404</div>
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Oops! Page not found</h2>
+            <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is
+                temporarily unavailable.</p>
+            <a href="index.html" class="btn btn--yellow">
+                <i class="fa-solid fa-house"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
